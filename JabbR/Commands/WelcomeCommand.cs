@@ -5,7 +5,7 @@ using JabbR.Services;
 namespace JabbR.Commands
 {
     [Command("welcome", "Set the room's welcome message. Type welcome to clear the room's welcome message.", "[message]", "room")]
-    //public class WelcomeCommand : UserCommand
+    public class WelcomeCommand : UserCommand
     {
         public override void Execute(CommandContext context, CallerContext callerContext, ChatUser callingUser, string[] args)
         {
